@@ -1,45 +1,19 @@
 export default function Features() {
-  const leadFeature = {
-    title: 'Smart Gallery Search',
-    desc: 'Your clients find their photos by face, moment, or name in seconds. No scrolling through hundreds of photos. Just search.',
-    icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>,
-  };
-
-  const features = [
-    {
-      title: 'Branded Client Gallery',
-      desc: 'Your name, your logo, on every screen your clients share.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>,
-    },
+  const tier3 = [
     {
       title: 'Privacy & Access Control',
-      desc: 'One link. Two access levels. Couple sees everything, guests see what you choose.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>,
-    },
-    {
-      title: 'QR Code Delivery',
-      desc: 'Print it on the invite. Display it at the venue. Guests scan and they\u2019re in.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="4" height="4" rx="0.5"/></svg>,
+      desc: 'One link. Two access levels.',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>,
     },
     {
       title: 'Mobile-First Experience',
-      desc: 'Looks stunning on the phone your clients will actually use.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>,
+      desc: 'Stunning on every phone.',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>,
     },
     {
       title: 'Flexible Downloads',
-      desc: 'Full-res for the couple. Previews for family. Nothing for anyone who hasn\u2019t paid.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>,
-    },
-    {
-      title: 'Organised Albums',
-      desc: 'Ceremony. Reception. Details. Every moment where it belongs.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>,
-    },
-    {
-      title: 'Family Sharing',
-      desc: 'A separate view for relatives, without exposing the couple\u2019s full gallery.',
-      icon: <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>,
+      desc: 'Full-res or preview, your call.',
+      icon: <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>,
     },
   ];
 
@@ -49,22 +23,84 @@ export default function Features() {
         <div className="section-label">Features</div>
         <h2 className="section-heading">Everything your clients need. <span className="text-muted">Nothing you have to manage.</span></h2>
 
-        <div className="features-grid">
-          <div className="feature-card lead-card">
-            <div className="feature-card-inner">
-              <div className="feature-icon">{leadFeature.icon}</div>
-              <span className="feature-ai-tag">AI-Powered</span>
-              <h3 className="feature-title">{leadFeature.title}</h3>
-              <p className="feature-desc">{leadFeature.desc}</p>
+        {/* Tier 1: Hero feature - Smart Gallery Search */}
+        <div className="feature-hero">
+          <div className="feature-hero-content">
+            <span className="feature-ai-tag">AI-Powered</span>
+            <h3 className="feature-hero-title">Smart Gallery Search</h3>
+            <p className="feature-hero-desc">
+              Your clients find their photos by face, moment, or name in seconds. No scrolling through hundreds of photos. Just search.
+            </p>
+            <div className="feature-hero-examples">
+              <span className="example-query">&ldquo;Priya&apos;s family&rdquo;</span>
+              <span className="example-query">&ldquo;ceremony moments&rdquo;</span>
+              <span className="example-query">&ldquo;first dance&rdquo;</span>
+            </div>
+          </div>
+          <div className="feature-hero-visual">
+            <div className="search-demo">
+              <div className="search-demo-bar">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <span className="search-demo-query">Priya&apos;s family</span>
+                <span className="search-demo-cursor">|</span>
+              </div>
+              <div className="search-demo-results">
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&q=80" alt="" /></div>
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=400&q=80" alt="" /></div>
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=400&q=80" alt="" /></div>
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=400&q=80" alt="" /></div>
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1505932794465-147d1f1b2c97?w=400&q=80" alt="" /></div>
+                <div className="demo-photo"><img src="https://images.unsplash.com/photo-1606800052052-a08af7148866?w=400&q=80" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Tier 2: Mid-size features - Branded Gallery + QR Code */}
+        <div className="feature-tier-2">
+          <div className="feature-mid">
+            <div className="feature-mid-visual">
+              <div className="branded-mock">
+                <div className="branded-mock-header">
+                  <div className="branded-mock-logo">VE GALLERY</div>
+                </div>
+                <div className="branded-mock-grid">
+                  <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=300&q=80" alt="" />
+                  <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=300&q=80" alt="" />
+                  <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?w=300&q=80" alt="" />
+                  <img src="https://images.unsplash.com/photo-1478147427282-58a87a120781?w=300&q=80" alt="" />
+                </div>
+              </div>
+            </div>
+            <div className="feature-mid-content">
+              <h3 className="feature-mid-title">Branded Client Gallery</h3>
+              <p className="feature-mid-desc">Your name. Your logo. On every screen your clients share.</p>
             </div>
           </div>
 
-          {features.map((f, i) => (
-            <div className="feature-card" key={i}>
-              <div className="feature-card-inner">
-                <div className="feature-icon">{f.icon}</div>
-                <h3 className="feature-title">{f.title}</h3>
-                <p className="feature-desc">{f.desc}</p>
+          <div className="feature-mid">
+            <div className="feature-mid-visual">
+              <div className="qr-mock">
+                <div className="qr-code">
+                  <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&data=https%3A%2F%2Fve.gallery%2Fsara-john&margin=0" alt="QR code" />
+                </div>
+              </div>
+            </div>
+            <div className="feature-mid-content">
+              <h3 className="feature-mid-title">QR Code Delivery</h3>
+              <p className="feature-mid-desc">Print it on the invite. Display it at the venue. Guests scan and they&apos;re in.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Tier 3: Compact grid */}
+        <div className="feature-tier-3">
+          {tier3.map((f, i) => (
+            <div className="feature-compact" key={i}>
+              <div className="feature-compact-icon">{f.icon}</div>
+              <div className="feature-compact-text">
+                <h4>{f.title}</h4>
+                <p>{f.desc}</p>
               </div>
             </div>
           ))}

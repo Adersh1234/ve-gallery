@@ -1,3 +1,9 @@
+const CheckIcon = () => (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+    <polyline points="20 6 9 17 4 12" />
+  </svg>
+);
+
 export default function Hero() {
   return (
     <section className="hero">
@@ -14,11 +20,9 @@ export default function Hero() {
         </p>
         <a href="#" className="btn btn-primary hero-btn">Get Started &rarr;</a>
         <div className="trust-chips">
-          <span>500gb storage</span>
-          <span className="chip-dot"></span>
-          <span>Unlimited AI face recognition</span>
-          <span className="chip-dot"></span>
-          <span>No per-gallery fees</span>
+          <span className="trust-chip"><CheckIcon />500GB storage</span>
+          <span className="trust-chip"><CheckIcon />Unlimited AI face recognition</span>
+          <span className="trust-chip"><CheckIcon />No per-gallery fees</span>
         </div>
       </div>
     </section>

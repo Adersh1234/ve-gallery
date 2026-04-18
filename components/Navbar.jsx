@@ -31,10 +31,7 @@ export default function Navbar() {
             <a href="#how-it-works" onClick={(e) => handleClick(e, '#how-it-works')}>How it works</a>
             <a href="#pricing" onClick={(e) => handleClick(e, '#pricing')}>Pricing</a>
           </div>
-          <div className="nav-ctas">
-            <button className="nav-cta-secondary" onClick={() => setModalOpen(true)}>Talk to Sales</button>
-            <a href="#" className="nav-cta">Sign Up &rarr;</a>
-          </div>
+          <button className="nav-cta" onClick={() => setModalOpen(true)}>Talk to Sales &rarr;</button>
           <button className="mobile-menu-btn" aria-label="Menu">
             <span></span>
             <span></span>

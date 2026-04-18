@@ -28,7 +28,6 @@ export default function Pricing() {
                 <div className="price-tag">&#8377;8,000<span>/year</span></div>
                 <div className="price-storage">500GB storage</div>
               </div>
-              <a href="#" className="btn btn-primary pricing-btn">Get Started &rarr;</a>
               <div className="pricing-features">
                 <ul>
                   <li><Check />Unlimited galleries</li>
@@ -41,7 +40,10 @@ export default function Pricing() {
                   <li><Check />Flexible downloads</li>
                 </ul>
               </div>
-              <p className="pricing-note">No per-gallery fees. No surprise bills.</p>
+              <div className="pricing-cta-block">
+                <p className="pricing-note">No per-gallery fees. No surprise bills.</p>
+                <a href="#" className="btn btn-primary pricing-btn">Get Started &rarr;</a>
+              </div>
             </div>
 
             {/* Studio */}
@@ -51,7 +53,6 @@ export default function Pricing() {
                 <div className="price-tag">&#8377;20,000<span>/year</span></div>
                 <div className="price-storage">1TB storage</div>
               </div>
-              <a href="#" className="btn btn-outline pricing-btn">Get Started &rarr;</a>
               <div className="pricing-features">
                 <ul>
                   <li><Check />Everything in Starter</li>
@@ -59,7 +60,10 @@ export default function Pricing() {
                   <li><Check />Higher delivery volume</li>
                 </ul>
               </div>
-              <p className="pricing-note">For studios who need more room.</p>
+              <div className="pricing-cta-block">
+                <p className="pricing-note">For studios who need more room.</p>
+                <a href="#" className="btn btn-outline pricing-btn">Get Started &rarr;</a>
+              </div>
             </div>
 
             {/* Professional */}
@@ -69,7 +73,6 @@ export default function Pricing() {
                 <div className="price-tag">Custom</div>
                 <div className="price-storage">5TB storage</div>
               </div>
-              <button className="btn btn-outline pricing-btn" onClick={() => setModalOpen(true)}>Talk to Sales &rarr;</button>
               <div className="pricing-features">
                 <ul>
                   <li><Check />Everything in Studio</li>
@@ -78,7 +81,10 @@ export default function Pricing() {
                   <li><Check />Custom onboarding</li>
                 </ul>
               </div>
-              <p className="pricing-note">For 50+ weddings a year.</p>
+              <div className="pricing-cta-block">
+                <p className="pricing-note">For 50+ weddings a year.</p>
+                <button className="btn btn-outline pricing-btn" onClick={() => setModalOpen(true)}>Talk to Sales &rarr;</button>
+              </div>
             </div>
           </div>
         </div>

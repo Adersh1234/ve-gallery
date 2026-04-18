@@ -16,8 +16,8 @@ export default function Home() {
       <Navbar />
       <Hero />
       <ProblemSection />
-      <HowItWorks />
       <Features />
+      <HowItWorks />
       <Pricing />
       <FAQ />
       <CTA />
